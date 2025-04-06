@@ -5,3 +5,13 @@
 
 # Tech Stack
 Frontend: HTML, CSS (Tailwind), JavaScript / React (if used)
+
+# 🛍️ Features
+🧴 Product Showcase – Clean and beautiful display of all cosmetic products with filtering and search functionality.
+
+💬 Product Reviews – Customers can leave reviews and ratings.
+
+🔒 User Authentication – Secure login and registration for customers.
+
+🛒 Shopping Cart – Add to cart, update quantities, and checkout with ease.
+📱 Responsive Design – Works great on mobile, tablet, and desktop.
