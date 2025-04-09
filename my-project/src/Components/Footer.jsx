@@ -1,9 +1,9 @@
 const Footer = () => {
     return (
-        <footer className="bg-light text-center text-lg-start">
-            <div className="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
+        <footer className="bg-pink-200 text-center text-green-600 p-5 py-10">
+            <div className="text-center p-3">
                 © 2023 Copyright:
-                <a className="text-dark" href="https://mdbootstrap.com/"> MDBootstrap.com </a>
+                <p>Powered by EM956 Community 2025</p>
             </div>
         </footer>
     )
