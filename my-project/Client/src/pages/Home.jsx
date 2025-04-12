@@ -1,9 +1,38 @@
 import React from 'react';
 import homeImages from '../assets/assets.js';
 import { Link } from 'react-router-dom';
-import { animate } from 'animejs';
+import {anime} from 'animejs';
+import { useEffect, useRef } from 'react';
 
 const Home = () => {
+    const boxOneRef = useRef(null);
+    const boxTwoRef = useRef(null);
+    const boxThreeRef = useRef(null);
+    useEffect(() => {
+      const timeline = anime.timeline({
+        easing: 'easeOutExpo',
+        duration: 750
+      });
+      
+      // Add animations to the timeline
+      timeline
+        .add({
+          targets: boxOneRef.current,
+          translateX: 250,
+          backgroundColor: '#FF4081'
+        })
+        .add({
+          targets: boxTwoRef.current,
+          translateX: 250,
+          backgroundColor: '#00BCD4'
+        })
+        .add({
+          targets: boxThreeRef.current,
+          translateX: 250,
+          backgroundColor: '#76FF03'
+        });
+    }, []);
+
     return (
         <>
             <div className="grid ld:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 min-h-[80vh]">
@@ -14,7 +43,36 @@ const Home = () => {
                     <Link to="/product" className="bg-pink-600 p-4 rounded-lg px-10 text-xl text-white">Shop Now</Link>
                 </div>
                 <div className="flex justify-center items-center h-screen">
-                    
+                    <div className="timeline-container">
+                        <div 
+                            ref={boxOneRef} 
+                            style={{ 
+                            height: '50px', 
+                            width: '50px', 
+                            backgroundColor: '#E91E63',
+                            marginBottom: '10px'
+                            }} 
+                        ></div>
+                        <div 
+                            ref={boxTwoRef} 
+                            style={{ 
+                            height: '50px', 
+                            width: '50px', 
+                            backgroundColor: '#03A9F4',
+                            marginBottom: '10px'
+                            }} 
+                        >
+                        </div>
+                        <div 
+                            ref={boxThreeRef} 
+                            style={{ 
+                            height: '50px', 
+                            width: '50px', 
+                            backgroundColor: '#4CAF50'
+                            }} 
+                        >
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className='py-10 flex flex-col justify-center items-center min-h-[50vh]'>
