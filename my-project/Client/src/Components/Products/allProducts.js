@@ -1,4 +1,4 @@
-export const products = [
+const products = [
     {
         title:" Luminous Silk Foundation",
         img:"./images/products/item001.jpg",
@@ -482,3 +482,6 @@ export const products = [
     }
     
 ]; 
+
+
+export default products;

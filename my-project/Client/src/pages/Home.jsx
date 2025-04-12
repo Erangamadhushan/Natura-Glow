@@ -1,37 +1,37 @@
 import React from 'react';
 import homeImages from '../assets/assets.js';
 import { Link } from 'react-router-dom';
-import {anime} from 'animejs';
+//import {anime} from 'animejs';
 import { useEffect, useRef } from 'react';
 
 const Home = () => {
-    const boxOneRef = useRef(null);
-    const boxTwoRef = useRef(null);
-    const boxThreeRef = useRef(null);
-    useEffect(() => {
-      const timeline = anime.timeline({
-        easing: 'easeOutExpo',
-        duration: 750
-      });
+    // const boxOneRef = useRef(null);
+    // const boxTwoRef = useRef(null);
+    // const boxThreeRef = useRef(null);
+    // useEffect(() => {
+    //   const timeline = anime.timeline({
+    //     easing: 'easeOutExpo',
+    //     duration: 750
+    //   });
       
-      // Add animations to the timeline
-      timeline
-        .add({
-          targets: boxOneRef.current,
-          translateX: 250,
-          backgroundColor: '#FF4081'
-        })
-        .add({
-          targets: boxTwoRef.current,
-          translateX: 250,
-          backgroundColor: '#00BCD4'
-        })
-        .add({
-          targets: boxThreeRef.current,
-          translateX: 250,
-          backgroundColor: '#76FF03'
-        });
-    }, []);
+    //   // Add animations to the timeline
+    //   timeline
+    //     .add({
+    //       targets: boxOneRef.current,
+    //       translateX: 250,
+    //       backgroundColor: '#FF4081'
+    //     })
+    //     .add({
+    //       targets: boxTwoRef.current,
+    //       translateX: 250,
+    //       backgroundColor: '#00BCD4'
+    //     })
+    //     .add({
+    //       targets: boxThreeRef.current,
+    //       translateX: 250,
+    //       backgroundColor: '#76FF03'
+    //     });
+    // }, []);
 
     return (
         <>
@@ -44,7 +44,7 @@ const Home = () => {
                 </div>
                 <div className="flex justify-center items-center h-screen">
                     <div className="timeline-container">
-                        <div 
+                        {/* <div 
                             ref={boxOneRef} 
                             style={{ 
                             height: '50px', 
@@ -71,7 +71,7 @@ const Home = () => {
                             backgroundColor: '#4CAF50'
                             }} 
                         >
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -102,6 +102,16 @@ const Home = () => {
                 </div>
                 <div>
                     
+                </div>
+            </div>
+
+            <div className='grid grid-cols-1 md:grid-cols-2'>
+                <div>
+
+                </div>
+                <div className='p-10'>
+                    <h2 className='text-center text-2xl md:text-4xl lg:text-6xl font-semibold py-5'>Explore <span className='text-pink-500'>Our Skin Care</span> Product</h2>
+                    <p className='text-center text-lg p-10'>Embark on a skincare journey with Natura Glow's Explorer Collection. Crafted for the modern woman who refuses to compromise, this premium line combines cutting-edge skincare science with nature's most powerful ingredients. Each product in this collection is designed to work in harmony with your skin's natural processes, delivering visible results without harsh chemicals or artificial additives.</p>
                 </div>
             </div>
 
