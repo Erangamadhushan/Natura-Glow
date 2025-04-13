@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import menu from '../assets/assets.js';
+import { menuLogo } from '../assets/assets.js';
 import React from 'react';
 import { useState } from 'react';
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
     return (
-        <div>
+        <div className='sticky top-0 z-50 left-0'>
             <nav className='w-full max-w-[100%] flex justify-between items-center bg-black p-4'>
                 <div>
                     <Link to="/" ><h1 className='text-2xl text-white font-bold'>Natura Glow</h1></Link>
@@ -30,14 +30,14 @@ const Navbar = () => {
                 <div className='hidden lg:flex items-center space-x-4'>
                     <form className='flex items-center' onSubmit={(e) => {e.preventDefault(); window.alert('Search functionality not implemented yet.')}}>
                         <div>
-                            <input type='text' placeholder='Search...' className='px-4 py-2 rounded-l-md focus:outline-none' />
+                            <input type='text' placeholder='Search...' className='px-4 py-2 rounded-l-md focus:outline-none'  required/>
                             <input type='submit' value='Search' className='bg-pink-600 text-white px-4 py-2 rounded-r-md  cursor-pointer hover:bg-pink-700' />
                         </div>
                     </form>
                     
                 </div>
                 <div className='md:hidden flex items-center space-x-4'>
-                    <button className='bg-gray-800 text-white px-4 py-2 rounded-md duration-300 hover:bg-gray-900' onClick={handleNavbar}><img src={menu} style={iconsStyle} alt='menu'/></button>
+                    <button className='bg-gray-800 text-white px-4 py-2 rounded-md duration-300 hover:bg-gray-900' onClick={handleNavbar}><img src={menuLogo} style={iconsStyle} alt='menu'/></button>
                 </div>
                 
             </nav>

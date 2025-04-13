@@ -1,10 +1,13 @@
 import React from 'react';
-import homeImages from '../assets/assets.js';
 import { Link } from 'react-router-dom';
+import useScrollReveal from '../hooks/scrollReveal.js';
 //import {anime} from 'animejs';
+import { mainImage } from '../assets/assets.js'
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { useEffect, useRef } from 'react';
 
 const Home = () => {
+    useScrollReveal();
     // const boxOneRef = useRef(null);
     // const boxTwoRef = useRef(null);
     // const boxThreeRef = useRef(null);
@@ -35,15 +38,20 @@ const Home = () => {
 
     return (
         <>
-            <div className="grid ld:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 min-h-[80vh]">
-                <div className='flex justify-center items-center flex-col'>
-                    <h1 className="text-4xl font-bold text-black p-5 ">Flat 20% Off</h1>
-                    <h2 className=" text-3xl md:text-6xl text-center font-bold text-black p-5" >Discover Your Natural Radiance with Natura Glow</h2>
+            <div className="grid ld:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 min-h-[80vh] " style={{backgroundImage:`url(${mainImage})`,objectFit:'cover',backgroundRepeat:'no-repeat',width:'100%'}}>
+                <div className='flex justify-center items-center flex-col text-white scroll-up'>
+                    <h1 className="text-4xl font-bold text-white p-5 ">Flat 20% Off</h1>
+                    <h2 className=" text-3xl md:text-6xl text-center font-bold text-white p-5" >Discover Your Natural Radiance with Natura Glow</h2>
                     <p className='py-10 text-lg'>Premium cosmetics crafted with natural ingredients to enhance your beauty, not mask it.</p>
                     <Link to="/product" className="bg-pink-600 p-4 rounded-lg px-10 text-xl text-white">Shop Now</Link>
                 </div>
-                <div className="flex justify-center items-center h-screen">
+                <div className="flex justify-center items-center h-screen" >
                     <div className="timeline-container">
+                    <DotLottieReact
+                    src="path/to/animation.lottie"
+                    loop
+                    autoplay
+                    />
                         {/* <div 
                             ref={boxOneRef} 
                             style={{ 
@@ -84,16 +92,7 @@ const Home = () => {
                     <h2 className='text-center md:text-4xl font-bold'>Our Products Are</h2>
                 </div>
                 <div className='flex flex-row justify-center items-center gap-4'>
-                    {
-                        [1,2,3,4,5,6].map((item) => {
-                            return (
-                                <div className="w-[95%] mx-auto max-w-[380px] shadow-md" key={item}>
-                                    <img src={homeImages[item]} alt="Product" className="rounded-lg shadow-lg" />
-                                    <h2>Topic 1</h2>
-                                </div>
-                            )
-                        })
-                    }
+                    
                 </div>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 py-5 min-h-[50vh]'>

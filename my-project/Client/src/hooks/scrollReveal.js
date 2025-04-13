@@ -11,12 +11,12 @@ const useScrollReveal = (options = {}) => {
       reset: false,
     });
 
-    sr.reveal(`.scroll-reveal`, {
+    sr.reveal(`.scroll-left`, {
       origin: 'left',
       interval: 100,
     });
 
-    sr.reveal(`.scroll-items`, {
+    sr.reveal(`.scroll-right`, {
         origin: 'right',
         interval: 150,
     });
