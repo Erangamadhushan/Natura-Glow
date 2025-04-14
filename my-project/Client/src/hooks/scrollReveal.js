@@ -18,7 +18,7 @@ const useScrollReveal = (options = {}) => {
 
     sr.reveal(`.scroll-right`, {
         origin: 'right',
-        interval: 150,
+        interval: 100,
     });
 
     sr.reveal(`.scroll-up`, {

@@ -2,44 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import useScrollReveal from '../hooks/scrollReveal.js';
 //import {anime} from 'animejs';
-import { mainImage } from '../assets/assets.js'
+import { mainImage, cosmeticsImage } from '../assets/assets.js'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { useEffect, useRef } from 'react';
 
 const Home = () => {
     useScrollReveal();
-    // const boxOneRef = useRef(null);
-    // const boxTwoRef = useRef(null);
-    // const boxThreeRef = useRef(null);
-    // useEffect(() => {
-    //   const timeline = anime.timeline({
-    //     easing: 'easeOutExpo',
-    //     duration: 750
-    //   });
-      
-    //   // Add animations to the timeline
-    //   timeline
-    //     .add({
-    //       targets: boxOneRef.current,
-    //       translateX: 250,
-    //       backgroundColor: '#FF4081'
-    //     })
-    //     .add({
-    //       targets: boxTwoRef.current,
-    //       translateX: 250,
-    //       backgroundColor: '#00BCD4'
-    //     })
-    //     .add({
-    //       targets: boxThreeRef.current,
-    //       translateX: 250,
-    //       backgroundColor: '#76FF03'
-    //     });
-    // }, []);
-
+    
     return (
         <>
             <div className="grid ld:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 min-h-[80vh] " style={{backgroundImage:`url(${mainImage})`,objectFit:'cover',backgroundRepeat:'no-repeat',width:'100%'}}>
-                <div className='flex justify-center items-center flex-col text-white scroll-up'>
+                <div className='flex justify-center items-center flex-col text-white scroll-left'>
                     <h1 className="text-4xl font-bold text-white p-5 ">Flat 20% Off</h1>
                     <h2 className=" text-3xl md:text-6xl text-center font-bold text-white p-5" >Discover Your Natural Radiance with Natura Glow</h2>
                     <p className='py-10 text-lg'>Premium cosmetics crafted with natural ingredients to enhance your beauty, not mask it.</p>
@@ -47,39 +20,7 @@ const Home = () => {
                 </div>
                 <div className="flex justify-center items-center h-screen" >
                     <div className="timeline-container">
-                    <DotLottieReact
-                    src="path/to/animation.lottie"
-                    loop
-                    autoplay
-                    />
-                        {/* <div 
-                            ref={boxOneRef} 
-                            style={{ 
-                            height: '50px', 
-                            width: '50px', 
-                            backgroundColor: '#E91E63',
-                            marginBottom: '10px'
-                            }} 
-                        ></div>
-                        <div 
-                            ref={boxTwoRef} 
-                            style={{ 
-                            height: '50px', 
-                            width: '50px', 
-                            backgroundColor: '#03A9F4',
-                            marginBottom: '10px'
-                            }} 
-                        >
-                        </div>
-                        <div 
-                            ref={boxThreeRef} 
-                            style={{ 
-                            height: '50px', 
-                            width: '50px', 
-                            backgroundColor: '#4CAF50'
-                            }} 
-                        >
-                        </div> */}
+                        <DotLottieReact src="path/to/animation.lottie" loop autoplay />
                     </div>
                 </div>
             </div>
@@ -105,10 +46,10 @@ const Home = () => {
             </div>
 
             <div className='grid grid-cols-1 md:grid-cols-2'>
-                <div>
-
+                <div className='p-10 scroll-left'>
+                    <img src={cosmeticsImage} className='w-full' alt='main cosmetics images'/>
                 </div>
-                <div className='p-10'>
+                <div className='p-10 scroll-right'>
                     <h2 className='text-center text-2xl md:text-4xl lg:text-6xl font-semibold py-5'>Explore <span className='text-pink-500'>Our Skin Care</span> Product</h2>
                     <p className='text-center text-lg p-10'>Embark on a skincare journey with Natura Glow's Explorer Collection. Crafted for the modern woman who refuses to compromise, this premium line combines cutting-edge skincare science with nature's most powerful ingredients. Each product in this collection is designed to work in harmony with your skin's natural processes, delivering visible results without harsh chemicals or artificial additives.</p>
                 </div>
