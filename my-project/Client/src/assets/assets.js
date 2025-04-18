@@ -1,6 +1,7 @@
 import menu from './menu.png';
 import main from './home/main.jpg';
 import cosmetics from './home/cosmetics.jpg';
+import review from './home/review.jpg';
 
 //load icons into the file
 import cruelty from './home/icons/cruelty-free.png';
@@ -20,6 +21,7 @@ import popular3 from './home/items/items3.jpg';
 export const menuLogo = [menu];
 export const mainImage = main;
 export const cosmeticsImage = cosmetics;
+export const reviewImage = review;
 export const iconsImage = [ cruelty, ethical, labTest, noAlcohol, noChemicals, organic, sulface ];
 
 export const cosmeticsDetails = [
