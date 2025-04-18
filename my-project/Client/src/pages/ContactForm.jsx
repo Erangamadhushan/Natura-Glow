@@ -138,10 +138,10 @@ export default function ContactForm() {
           <textarea
             id="message"
             name="message"
-            rows="5"
+            rows="6"
             value={formData.message}
             onChange={handleChange}
-            className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+            className={`w-full px-4 py-2 border resize-none rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
               errors.message ? 'border-red-500' : 'border-gray-300'
             }`}
           />
