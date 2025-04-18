@@ -20,7 +20,7 @@ const Home = () => {
     
     return (
         <>
-            <div className="grid ld:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 min-h-[70vh] " >
+            <div className="grid ld:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 min-h-[70vh] p-3" >
                 <div className='flex justify-center items-center flex-col text-black scroll-left'>
                     <h1 className="text-4xl font-bold text-black p-5 ">Flat 20% Off</h1>
                     <h2 className=" text-3xl md:text-6xl text-center font-bold text-black p-5" >Discover Your Natural Radiance with Natura Glow</h2>
