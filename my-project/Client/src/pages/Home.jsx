@@ -4,7 +4,7 @@ import useScrollReveal from '../hooks/scrollReveal.js';
 //import style from '../App.css';
 //import {anime} from 'animejs';
 import { testimonials } from '../Components/Home/testimonials.js';
-import { mainImage, cosmeticsImage, cosmeticsDetails, popularItems } from '../assets/assets.js'
+import { mainImage, cosmeticsImage, cosmeticsDetails, popularItems, reviewImage } from '../assets/assets.js'
 // import { useEffect, useRef } from 'react';
 
 const Home = () => {
@@ -91,12 +91,12 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='py-10 flex flex-col justify-center items-center gap-4 min-h-[50vh]'>
+            <div className='py-10 flex flex-col justify-center items-center gap-4 min-h-[50vh]' >
                 {/* Customer review section */}
                 <div>
-                    <h2 className='text-center text-2xl md:text-5xl font-bold'>What Our Customers Say</h2>
+                    <h2 className='text-center text-2xl md:text-5xl font-bold text-pink-500'>What Our Customers Say</h2>
                 </div>
-                <div className='flex flex-wrap flex-row justify-center items-center gap-5 my-10'>
+                <div className='flex flex-wrap flex-row justify-center items-center gap-5 my-10 min-h-[70vh]' style={{backgroundImage:`url(${reviewImage})`,backgroundPosition:'center',objectFit:'cover',backgroundRepeat:'no-repeat',width:'100%'}}>
                     {
                         testimonials.map((item, index) => {
                             return (
