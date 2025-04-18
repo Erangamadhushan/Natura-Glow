@@ -4,7 +4,7 @@ import useScrollReveal from '../hooks/scrollReveal.js';
 //import style from '../App.css';
 //import {anime} from 'animejs';
 import { testimonials } from '../Components/Home/testimonials.js';
-import { mainImage, cosmeticsImage, cosmeticsDetails, popularItems, reviewImage } from '../assets/assets.js'
+import { mainImage, cosmeticsImage, cosmeticsDetails, popularItems, reviewImage, cosmeticsMainImage } from '../assets/assets.js'
 // import { useEffect, useRef } from 'react';
 
 const Home = () => {
