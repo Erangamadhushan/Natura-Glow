@@ -12,6 +12,7 @@
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.13.3",
     "animejs": "^4.0.1",
+    "lucide-react": "^0.494.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "scrollreveal": "^4.0.9"

@@ -1,6 +1,10 @@
 import {Link} from 'react-router-dom';
 import products from '../Components/Products/allProducts'
+import useScrollReveal from '../hooks/scrollReveal.js';
 const Products = () => {
+    useScrollReveal();
+    // useScrollReveal is a custom hook that applies scroll reveal animations to the component
+    // It is used to add scroll reveal animations to the component when it is rendered
     return (
         <div className="products">
             <h1 className='text-center text-2xl md:text-3xl lg:text-5xl py-10 text-pink-500 font-bold'>Products</h1>
@@ -9,7 +13,7 @@ const Products = () => {
                 {
                     products.map((product) => {
                         return (
-                            <div className='w-[95%] relative mx-auto p-3 max-w-[330px] min-h-[450px] border border-pink-500 rounded-xl'>
+                            <div className='w-[95%] relative mx-auto p-3 max-w-[330px] min-h-[450px] border border-pink-500 rounded-xl scroll-up'>
                                 <div>
                                     <img src={product.image} alt={product.title} />
                                 </div>
