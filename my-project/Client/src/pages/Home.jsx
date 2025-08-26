@@ -20,7 +20,7 @@ const Home = () => {
     
     return (
         <>
-            <div className="grid ld:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 min-h-[70vh] p-3" >
+            <div className="grid ld:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 min-h-[70vh] p-3"  style={{backgroundImage:`url(${mainImage})`, backgroundPosition:'center',objectFit:'cover',backgroundRepeat:'no-repeat',width:'100%'}}>
                 <div className='flex justify-center items-center flex-col text-black scroll-left'>
                     <h1 className="text-4xl font-bold text-black p-5 ">Flat 20% Off</h1>
                     <h2 className=" text-3xl md:text-6xl text-center font-bold text-black p-5" >Discover Your Natural Radiance with Natura Glow</h2>
@@ -28,9 +28,7 @@ const Home = () => {
                     <Link to="/product" className="bg-pink-600 p-4 rounded-lg px-10 text-xl text-white">Shop Now</Link>
                 </div>
                 <div className="flex justify-center items-center h-screen" >
-                    <div className="timeline-container" style={{backgroundImage:`url(${mainImage})`,backgroundPosition:'center',objectFit:'cover',backgroundRepeat:'no-repeat',width:'100%'}}>
-                        <img src={mainImage} alt="Main Image" className="w-full h-full object-cover" />
-                    </div>
+                    
                 </div>
             </div>
             <div className='py-5 flex flex-col justify-center items-center min-h-[50vh]'>
