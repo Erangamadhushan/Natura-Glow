@@ -11,13 +11,13 @@ const Footer = () => {
               Your trusted partner in beauty, bringing you the finest cosmetics and skincare products.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="p-2 bg-rose-600 rounded-full hover:bg-rose-700 transition-colors">
+              <a href="#" className="p-2 bg-green-600 rounded-full hover:bg-green-700 transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="p-2 bg-rose-600 rounded-full hover:bg-rose-700 transition-colors">
+              <a href="#" className="p-2 bg-green-600 rounded-full hover:bg-green-700 transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="p-2 bg-rose-600 rounded-full hover:bg-rose-700 transition-colors">
+              <a href="#" className="p-2 bg-green-600 rounded-full hover:bg-green-700 transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
             </div>
@@ -56,15 +56,15 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <Mail className="h-4 w-4 text-rose-400" />
+                <Mail className="h-4 w-4 text-green-400" />
                 <span className="text-gray-300">hello@glowbeauty.com</span>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="h-4 w-4 text-rose-400" />
+                <Phone className="h-4 w-4 text-green-400" />
                 <span className="text-gray-300">+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center gap-3">
-                <MapPin className="h-4 w-4 text-rose-400" />
+                <MapPin className="h-4 w-4 text-green-400" />
                 <span className="text-gray-300">New York, NY 10001</span>
               </div>
             </div>
