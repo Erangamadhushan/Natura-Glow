@@ -11,6 +11,7 @@ import noAlcohol from './home/icons/no-alcohol.png';
 import noChemicals from './home/icons/no-chemical.png';
 import organic from './home/icons/organic.png';
 import sulface from './home/icons/sulface.png';
+import mainCosmetics from './home/cosmetics.png';
 
 //load main popular itme resources
 import popular1 from './home/items/items1.jpg';
@@ -23,7 +24,7 @@ export const mainImage = main;
 export const cosmeticsImage = cosmetics;
 export const reviewImage = review;
 export const iconsImage = [ cruelty, ethical, labTest, noAlcohol, noChemicals, organic, sulface ];
-
+export const cosmeticsMainImage = mainCosmetics;
 export const cosmeticsDetails = [
     {
         name:'Organic',
