@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className='sticky top-0 z-20 left-0'>
             {/* set blur navbar  */}
 
-            <nav className={`w-full z-50 max-w-[100%] flex justify-between inset-0 bg-gray-200 opacity-70 items-center  p-4 md:px-10 lg:px-20 shadow-md`}>
+            <nav className={`w-full z-50 max-w-[100%] flex justify-between inset-0 bg-gray-200 opacity-80 items-center  p-4 md:px-10 lg:px-20 shadow-md`}>
                 <div>
                     <a href="/" ><h1 className='text-2xl text-black font-bold'>Natura Glow</h1></a>
                 </div>

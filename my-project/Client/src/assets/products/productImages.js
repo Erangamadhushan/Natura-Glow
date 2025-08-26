@@ -12,4 +12,6 @@ export const productImages = [
     { id: 4, src: mechellarWater, alt: 'Micellar Water' },
     { id: 5, src: moisturizer, alt: 'Moisturizer' },
     { id: 6, src: silk, alt: 'Silk' },
-]
+];
+
+export const productImageArray = [lipGloss, lipstick, makeupHighligher, mechellarWater, moisturizer, silk];

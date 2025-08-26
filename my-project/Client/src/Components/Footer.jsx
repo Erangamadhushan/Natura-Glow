@@ -2,11 +2,11 @@ import React from 'react';
 import { Instagram, Facebook, Twitter, Mail, Phone, MapPin } from 'lucide-react';
 const Footer = () => {
     return (
-    <footer className="bg-gray-900 text-white py-16">
+    <footer className="bg-green-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-gradient mb-4">GlowBeauty</h3>
+            <h3 className="text-2xl font-bold text-gradient mb-4">Natura Glow</h3>
             <p className="text-gray-300 mb-6">
               Your trusted partner in beauty, bringing you the finest cosmetics and skincare products.
             </p>

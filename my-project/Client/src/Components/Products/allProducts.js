@@ -1,7 +1,9 @@
+import { productImageArray } from "../../assets/products/productImages";
 const products = [
     {
         title:" Luminous Silk Foundation",
-        img:"./images/products/item001.jpg",
+        // import assets folder menu.png file
+        img:productImageArray[1],
         category:"category1",
         desc:"Our award-winning Luminous Silk Foundation delivers a second-skin effect with groundbreaking micro-fil technology.",
         price:42.99,
@@ -24,7 +26,7 @@ const products = [
     },
     {
         title:"Dewy Glow Highlighter",
-        img:"./images/products/item002.jpg",
+        img:productImageArray[1],
         category:"category2",
         desc:"Achieve that coveted lit-from-within glow with our revolutionary cream-to-powder highlighter.",
         price:28.50,
@@ -47,7 +49,7 @@ const products = [
     },
     {
         title:"Velvet Matte Lipstick",
-        img:"./images/products/item003.jpg",
+        img:productImageArray[2],
         category:"category3",
         desc:"Experience color that commands attention with our Velvet Matte Lipstick.",
         price:24.99,
@@ -70,7 +72,7 @@ const products = [
     },
     {
         title:" Hydra-Plump Lip Gloss",
-        img:"./images/products/item004.jpg",
+        img:productImageArray[2],
         category:"category4",
         desc:"Our innovative Hydra-Plump Lip Gloss delivers mirror-like shine with the benefits of a treatment.",
         price:19.99,
@@ -93,7 +95,7 @@ const products = [
     },
     {
         title:"Botanical Micellar Water",
-        img:"./images/products/item005.jpg",
+        img:productImageArray[1],
         category:"category5",
         desc:"This gentle yet effective micellar water harnesses the power of micelle technology to attract and lift away impurities without disrupting your skin's natural barrier.",
         price:22.00,
@@ -117,7 +119,7 @@ const products = [
     },
     {
         title:"Cloud Whip Moisturizer",
-        img:"./images/products/item006.jpg",
+        img:productImageArray[1],
         category:"category1",
         desc:"Experience the luxurious texture of our Cloud Whip Moisturizer, which transforms from a rich cream to a lightweight veil upon application",
         price:38.50,
@@ -141,7 +143,7 @@ const products = [
     },
     {
         title:"Precision Eye Liner Pen",
-        img:"./images/products/item007.jpg",
+        img:productImageArray[2],
         category:"category2",
         desc:" Create flawless lines with unprecedented precision using our Precision Eye Liner Pen.",
         price:21.99,
@@ -163,7 +165,7 @@ const products = [
     },
     {
         title:"Lash Amplify Mascara",
-        img:"./images/products/item008.jpg",
+        img:productImageArray[2],
         category:"category3",
         desc:"Transform your lashes with our Lash Amplify Mascara, featuring a curved brush designed to reach every lash from root to tip",
         price:25.50,
@@ -186,7 +188,7 @@ const products = [
     },
     {
         title:"Revival Night Serum",
-        img:"./images/products/item009.jpg",
+        img:productImageArray[3],
         category:"category4",
         desc:"Our scientifically advanced Revival Night Serum works while you sleep to transform your complexion",
         price:68.00,
@@ -210,7 +212,7 @@ const products = [
     },
     {
         title:"Multi-Spectrum Eyeshadow Palette",
-        img:"./images/products/item010.jpg",
+        img:productImageArray[1],
         category:"category5",
         desc:" Unleash your creativity with our Multi-Spectrum Eyeshadow Palette featuring 12 carefully curated shades for countless eye looks",
         price:48.99,
@@ -234,7 +236,7 @@ const products = [
     ,
     {
         title:"Pore Perfecting Primer",
-        img:"./images/products/item011.jpg",
+        img:productImageArray[2],
         category:"category1",
         desc:"This revolutionary silicone-free primer instantly blurs imperfections while treating skin with beneficial ingredients",
         price:32.00,
@@ -259,7 +261,7 @@ const products = [
     ,
     {
         title:"Solar Shield SPF 50",
-        img:"./images/products/item012.jpg",
+        img:productImageArray[1],
         category:"category2",
         desc:"Our Solar Shield SPF 50 offers superior sun protection with a revolutionary texture that disappears upon application",
         price:36.50,
@@ -285,7 +287,7 @@ const products = [
     ,
     {
         title:"Brow Sculpt Pomade",
-        img:"./images/products/item013.jpg",
+        img:productImageArray[2],
         category:"category3",
         desc:"Achieve perfectly defined brows with our Brow Sculpt Pomade",
         price:22.99,
@@ -309,7 +311,7 @@ const products = [
     ,
     {
         title:"Rose Quartz Facial Roller",
-        img:"./images/products/item014.jpg",
+        img:productImageArray[1],
         category:"category4",
         desc:"Our dual-ended Rose Quartz Facial Roller combines ancient beauty rituals with modern skincare science.",
         price:28.00,
@@ -331,7 +333,7 @@ const products = [
     ,
     {
         title:"Hydrating Mist Toner",
-        img:"./images/products/item015.jpg",
+        img:productImageArray[1],
         category:"category5",
         desc:"Our multi-tasking Hydrating Mist Toner delivers a fine mist of skin-loving ingredients that tone, hydrate, and refresh in one step.",
         price:26.00,
@@ -357,7 +359,7 @@ const products = [
     ,
     {
         title:"Liquid Blush Drops",
-        img:"./images/products/item016.jpg",
+        img:productImageArray[1],
         category:"category1",
         desc:"Our innovative Liquid Blush Drops deliver concentrated color that can be built from a subtle flush to a vibrant pop",
         price:24.99,
@@ -381,7 +383,7 @@ const products = [
     ,
     {
         title:"Clarifying Clay Mask",
-        img:"./images/products/item017.jpg",
+        img:productImageArray[2],
         category:"category2",
         desc:"This is a Item017 Description for customersOur Clarifying Clay Mask provides a deep cleanse without the tight, stripped feeling often associated with clay treatments",
         price:32.50,
@@ -407,7 +409,7 @@ const products = [
     ,
     {
         title:"Radiance Vitamin C Serum",
-        img:"./images/products/item018.jpg",
+        img:productImageArray[2],
         category:"category3",
         desc:"Our cutting-edge Radiance Vitamin C Serum features a stabilized 15% L-ascorbic acid formula that remains potent from first use to last drop.",
         price:58.00,
@@ -432,7 +434,7 @@ const products = [
     ,
     {
         title:"Gentle Enzyme Exfoliator",
-        img:"./images/products/item019.jpg",
+        img:productImageArray[2],
         category:"category4",
         desc:"Experience the benefits of exfoliation without the harshness of scrubs with our Gentle Enzyme Exfoliator",
         price:38.00,
@@ -459,7 +461,7 @@ const products = [
     ,
     {
         title:"Silk Pillowcase",
-        img:"./images/products/item020.jpg",
+        img:productImageArray[1],
         category:"category5",
         desc:"This is a Item020 Description for customersElevate your beauty sleep with our luxurious 100% Mulberry Silk Pillowcase.",
         price:65.00,

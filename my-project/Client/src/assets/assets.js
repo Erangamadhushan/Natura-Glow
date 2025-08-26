@@ -1,5 +1,5 @@
 import menu from './menu.png';
-import main from './home/main.jpg';
+import main from './home/cosmetics.png';
 import cosmetics from './home/cosmetics.jpg';
 import review from './home/review.jpg';
 
