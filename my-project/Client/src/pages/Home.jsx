@@ -72,8 +72,8 @@ const Home = () => {
                 </div>
             </div>
             <div className='min-h-[55vh]'>
-                <div className='grid grid-cols-1 md:grid-cols-2 py-5 min-h-[50vh]'>
-                    <div className='p-5'>
+                <div className='grid grid-cols-1 py-5 min-h-[50vh]'>
+                    <div className='p-5 md:p-10 my-20'>
                         <h2 className='text-2xl md:text-5xl font-semibold text-center'>Your Beauty and Skin Success starts here</h2>
                         <p className='text-xl py-5 text-center'>Welcome to Natura Glow, where your journey to radiant skin and timeless beauty begins. We believe that beautiful skin isn't just about appearances—it's about confidence, self-care, and embracing your natural glow.</p>
                     </div>
