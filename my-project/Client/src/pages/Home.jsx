@@ -8,6 +8,7 @@ import { mainImage, cosmeticsImage, cosmeticsDetails, popularItems, reviewImage,
 // import home page component
 import Hero from '../Components/ui/home/Hero.jsx';
 import BestSelling from '../Components/ui/home/BestSelling.jsx';
+import { NewLetter } from '../Components/ui/home/NewLatter.jsx';
 
 const Home = () => {
     useScrollReveal();
@@ -25,6 +26,7 @@ const Home = () => {
             <Hero/>
 
             <BestSelling/>
+
             <div className='py-10 flex flex-col justify-center items-center gap-4 min-h-[50vh]'>
                 <div>
                     <h2 className='text-center text-2xl md:text-5xl font-bold'>Our Products Are</h2>
@@ -34,8 +36,8 @@ const Home = () => {
                         cosmeticsDetails.map((item, index) => {
                             return (
                                 <div key={index} style={cosmeticsStyles} className='flex flex-col p-4 m-5 justify-center items-center scroll-items-200 w-[200px]'>
-                                    <img src={item.image} className='w-10 h-10' alt={item.name}/>
-                                    <h2 className='text-lg font-semibold py-5'>{item.name}</h2>
+                                    <img src={item.image} className='w-10 h-10 text-green-600' alt={item.name}/>
+                                    <h2 className='text-lg font-semibold text-green-600 py-5'>{item.name}</h2>
                                 </div>
                             )
                         })
@@ -44,37 +46,43 @@ const Home = () => {
             </div>
             <div className='min-h-[55vh]'>
                 <div className='grid grid-cols-1 md:grid-cols-2 py-5 min-h-[50vh]'>
-                    <div className='p-5 md:p-10 my-20'>
-                        <h2 className='text-2xl md:text-5xl font-semibold text-center'>Your Beauty and Skin Success starts here</h2>
+                    <div className='p-5 md:p-5 my-10'>
+                        <h2 className='text-2xl md:text-5xl font-semibold text-center text-green-600'>Your Beauty and Skin Success starts here</h2>
                         <p className='text-xl py-5 text-center'>Welcome to Natura Glow, where your journey to radiant skin and timeless beauty begins. We believe that beautiful skin isn't just about appearances—it's about confidence, self-care, and embracing your natural glow.</p>
                     </div>
-                    <div className='p-5 md:p-10 my-20'>
-                        <h2 className='text-2xl md:text-5xl font-semibold text-center'>Our Promise to You</h2>
+                    <div className='p-5 md:p-5 my-10'>
+                        <h2 className='text-2xl md:text-5xl font-semibold text-center text-green-600'>Our Promise to You</h2>
                         <p className='text-xl p-10 text-center'>At Natura Glow, we are committed to providing you with the highest quality skincare products that are not only effective but also safe for your skin and the environment. Our formulations are free from harmful chemicals, parabens, and artificial fragrances, ensuring that you can indulge in self-care without compromise.</p>
                     </div>
                 </div>
                 <div>
                     <a href='/about' className='flex justify-center items-center'>
-                        <button className='border border-green-500 text-green-500 p-2 rounded-lg px-5 text-xl hover:text-white hover:bg-green-500'>Learn More</button>
+                        <button className='border border-green-500 text-green-500 p-2 rounded-lg px-5 text-xl hover:text-white hover:bg-green-500 duration-300'>Learn More</button>
                     </a>
                 </div>
             </div>
 
-            <div className='py-10 flex flex-col justify-center items-center gap-4 min-h-[50vh]' >
+            <div className='py-2 my-10 flex flex-col justify-center items-center bg-green-100 min-h-[50vh]' >
                 {/* Customer review section */}
-                <div>
+                <div className="mt-10">
                     <h2 className='text-center text-2xl md:text-5xl font-bold text-green-500'>What Our Customers Say</h2>
                 </div>
-                <div className='flex flex-wrap flex-row justify-center items-center gap-5 my-10 min-h-[70vh]' style={{backgroundImage:`url(${reviewImage})`,backgroundPosition:'center',objectFit:'cover',backgroundRepeat:'no-repeat',width:'100%'}}>
+                <div className='flex flex-wrap flex-row justify-center items-center  gap-5 min-h-[70vh]'>
                     {
                         testimonials.map((item, index) => {
                             return (
-                                <div key={index} style={cosmeticsStyles} className='flex flex-col p-4 m-5 justify-center items-center scroll-items-200 w-[300px]'>
-                                    <div>
-                                        <h2 className='text-lg font-semibold py-5'>{item.name}</h2>
-                                    </div>
+                                <div key={index} style={cosmeticsStyles} className='flex flex-col p-4 m-5 rounded-lg justify-center items-center scroll-items-200 w-[300px]'>
+                                    
                                     <div>
                                         <p className='text-center'>{item.description}</p>
+                                    </div>
+                                    <div className="flex flex-row">
+                                        <div>
+                                            <img src={item.image} alt={item.name} className='w-[50px] h-[50px] object-cover rounded-full'/>
+                                        </div>
+                                        <div>
+                                            <h2 className='text-lg font-semibold py-5'>{item.name}</h2>
+                                        </div>
                                     </div>
                                 </div>
                             )
@@ -85,7 +93,7 @@ const Home = () => {
 
             <div className='grid grid-cols-1 md:grid-cols-2'>
                 <div className='p-10 scroll-up'>
-                    <img src={cosmeticsImage} className='w-full' alt='main cosmetics images'/>
+                    {/* <img src={cosmeticsImage} className='w-3/4' alt='main cosmetics images'/> */}
                 </div>
                 <div className='p-10 scroll-up'>
                     <h2 className='text-center text-2xl md:text-4xl lg:text-6xl font-semibold py-5'>Explore <span className='text-green-500'>Our Skin Care</span> Product</h2>
@@ -96,36 +104,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div>
-                <div className="grid py-5">
-                    <div className=" p-5" >
-                        <h4 className=" text-3xl font-bold pl-5"><span className='text-green-500'>Subscribe</span> to our newsletter</h4>
-                        <p className=" text-xl pl-5"> Stay up-to-date with the latest news, trends, and product launches from Natura Glow. </p>
-                    </div>
-                    <div className="p-5" >
-                        <div>
-                            <form action="" onsubmit="newslatterSubscription" mathod="post" autocomplete="off" className="d-flex justify-content-center align-items-center">
-                                <input type="email" className="w-[90%] p-4 ml-5 border border-green-400" placeholder="Enter your email" aria-label="Recipient's username" required/>
-                                <div>
-                                    <button className=" m-5 p-5 px-10 bg-green-500 rounded-md text-white" type="submit">Subscribe</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div> 
-                <div>
-                    <div className="flex justify-center items-center py-2">
-                        <h2 className="text-2xl md:text-3xl font-bold text-center">Follow Us on Social Media</h2>
-                    </div>
-                </div>
-                <div className='social-media flex justify-center items-center gap-5 py-10'>
-                    <a href="https://www.instagram.com/" className='bg-green-800 p-2 px-4 text-white rounded hover:scale-[1.1] duration-300' target="_blank" rel="noopener noreferrer">Instagram Page</a>
-                    <a href="https://www.facebook.com/" className='bg-blue-800 p-2 px-4 text-white rounded hover:scale-[1.1] duration-300' target="_blank" rel="noopener noreferrer">Facebook Page</a>
-                    <a href="https://www.twitter.com/" className='bg-black p-2 px-4 text-white rounded hover:scale-[1.1] duration-300' target="_blank" rel="noopener noreferrer">X page</a>
-                </div>
-            </div>
+            <NewLetter />
         </>
     )
   };
