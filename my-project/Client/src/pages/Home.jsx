@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useScrollReveal from '../hooks/scrollReveal.js';
-//import style from '../App.css';
-//import {anime} from 'animejs';
-import { testimonials } from '../Components/Home/testimonials.js';
+import { testimonials } from '../Components/data/home/testimonials.js';
 import { mainImage, cosmeticsImage, cosmeticsDetails, popularItems, reviewImage, cosmeticsMainImage } from '../assets/assets.js'
-// import { useEffect, useRef } from 'react';
+
+
+// import home page component
+import Hero from '../Components/ui/home/Hero.jsx';
+import BestSelling from '../Components/ui/home/BestSelling.jsx';
 
 const Home = () => {
     useScrollReveal();
-
+    
     const cosmeticsStyles = {
         backgroundColor: 'white',
         minHeight:'200px',
@@ -20,40 +22,9 @@ const Home = () => {
     
     return (
         <>
-            <div className="grid ld:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 min-h-[70vh] p-3"  style={{backgroundImage:`url(${mainImage})`, backgroundPosition:'center',objectFit:'cover',backgroundRepeat:'no-repeat',width:'100%'}}>
-                <div className='flex justify-center items-center flex-col text-black'>
-                    <h1 className="text-4xl font-bold text-black p-5 ">Flat 20% Off</h1>
-                    <h2 className=" text-3xl md:text-6xl text-center font-bold text-black p-5" >Discover Your Natural Radiance with Natura Glow</h2>
-                    <p className='py-10 text-lg'>Premium cosmetics crafted with natural ingredients to enhance your beauty, not mask it.</p>
-                    <Link to="/product" className="bg-green-600 p-4 rounded-lg px-10 text-xl text-white">Shop Now</Link>
-                </div>
-                <div className="flex justify-center items-center h-screen" >
-                    
-                </div>
-            </div>
-            <div className='py-5 flex flex-col justify-center items-center min-h-[50vh]'>
-                <div className='py-5'>
-                    <h1 className=' text-2xl md:text-5xl font-bold text-black text-center'>Our <span className='text-green-500'>Best</span> <span className='text-black xl:text-white'>Sellers</span></h1>
-                    <p className='text-lg text-center '>Explore our top-rated produ<span className='text-white'></span><span className='text-black xl:text-white'>cts loved by our customers.</span></p>
-                </div>
-                <div className='flex flex-wrap justify-center items-center gap-10'>
-                    {
-                        popularItems.map((item, index) => {
-                            return (
-                                <div key={index} className="flex flex-col justify-center items-center p-5 w-[350px] duration-300 hover:scale(1.5) scroll-up" style={cosmeticsStyles}>
-                                    <img src={item.image} alt={item.name} className="w-[250px] h-[250px]"/>
-                                    <p className='text-center py-3 text-xl font-bold'>{item.title}</p>
-                                    <p className='text-center'>{item.desc}</p>
-                                    <p className='p-5 text-left text-lg font-bold'>${item.price}</p>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
-                <div className='my-10'>
-                    <Link to="/product" className="bg-green-600 p-4 rounded-lg px-10 text-xl text-white">View All Products</Link>
-                </div>
-            </div>
+            <Hero/>
+
+            <BestSelling/>
             <div className='py-10 flex flex-col justify-center items-center gap-4 min-h-[50vh]'>
                 <div>
                     <h2 className='text-center text-2xl md:text-5xl font-bold'>Our Products Are</h2>

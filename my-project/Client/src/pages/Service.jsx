@@ -5,15 +5,15 @@ const Service = () => {
     return (
         <div>
             <div className="py-10 flex flex-col justify-center items-center w-[95%] max-w-[1200px] mx-auto scroll-up">
-                <h2 className='text-center text-2xl md:text-5xl font-bold'>Begin Your Transformation <span className="text-pink-500">Today</span></h2>
+                <h2 className='text-center text-2xl md:text-5xl font-bold'>Begin Your Transformation <span className="text-green-500">Today</span></h2>
                 <p className='text-center text-lg py-5'>Whether you're looking to address specific concerns or simply enhance your natural beauty, Natura Glow has the perfect solution waiting for you. Browse our collections, take our skin assessment quiz, or connect with one of our skincare specialists.</p>
             </div>
             <div className="py-10 flex flex-col justify-center items-center  w-[95%] max-w-[1200px] mx-auto scroll-up">
-                <h2 className="text-2xl md:text-5xl font-bold py-5">Our <span className="text-pink-500">Services</span></h2>
+                <h2 className="text-2xl md:text-5xl font-bold py-5">Our <span className="text-green-500">Services</span></h2>
                 <p className="py-5">At Natura Glow, we go beyond simply selling products—we create personalized beauty experiences that nurture your skin's health and enhance your natural radiance. Our comprehensive services are designed to guide you on your journey to achieving your skincare goals with safe, healthy products that deliver real results.</p>
             </div>
             <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto scroll-up">
-                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-pink-500">Personalized Skin Consultations</h2>
+                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-green-500">Personalized Skin Consultations</h2>
                 <p className="py-5">Our certified skin specialists provide complimentary consultations to understand your unique skin profile and concerns. During your session, we'll:</p>
                 <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto">
                     <p> - Analyze your skin type and condition using advanced diagnostic tools</p>
@@ -25,7 +25,7 @@ const Service = () => {
                 </div>
             </div>
             <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto scroll-up">
-                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-pink-500">Product Curation & Recommendations</h2>
+                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-green-500">Product Curation & Recommendations</h2>
                 <p className="py-5 text-xl">Finding the right products shouldn't be overwhelming. Our experts carefully select products based on:</p>
                 <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto">
                     <p> - Your skin's specific requirements</p>
@@ -36,7 +36,7 @@ const Service = () => {
                 <p>We pride ourselves on honest recommendations—we'll only suggest products your skin truly needs.</p>
             </div>
             <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto scroll-up">
-                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-pink-500">Clean Beauty Education</h2>
+                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-green-500">Clean Beauty Education</h2>
                 <p className="py-5 text-xl">Knowledge is power. Our educational services include:</p>
                 <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto">
                     <p> - Ingredient awareness workshops to help you understand what goes onto your skin</p>
@@ -46,7 +46,7 @@ const Service = () => {
                 </div>
             </div>
             <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto scroll-up">
-                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-pink-500">Healthy Skin Maintenance Programs</h2>
+                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-green-500">Healthy Skin Maintenance Programs</h2>
                 <p className="py-5 text-xl">Maintaining beautiful skin is a journey, not a destination. Our maintenance programs offer:</p>
                 <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto">
                     <p> - Regular check-ins to monitor your skin's progress</p>
@@ -56,7 +56,7 @@ const Service = () => {
                 </div>
             </div>
             <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto scroll-up">
-                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-pink-500">Virtual Skincare Support</h2>
+                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-green-500">Virtual Skincare Support</h2>
                 <p className="py-5 text-xl">Can't visit in person? Our digital services provide convenience without compromising quality:</p>
                 <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto">
                     <p> - Video consultations with our skin specialists</p>
@@ -66,7 +66,7 @@ const Service = () => {
                 </div>
             </div>
             <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto scroll-up">
-                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-pink-500">Product Safety Guarantee</h2>
+                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-green-500">Product Safety Guarantee</h2>
                 <p className="py-5 text-xl">Your wellbeing is our priority. All products available through Natura Glow undergo:</p>
                 <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto">
                     <p> - Rigorous testing for safety and efficacy</p>
@@ -76,7 +76,7 @@ const Service = () => {
                 </div>
             </div>
             <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto scroll-up">
-                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-pink-500">Customized Solution Packages</h2>
+                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-green-500">Customized Solution Packages</h2>
                 <p className="py-5 text-xl">Based on your consultation, we offer tailored packages that address specific concerns:</p>
                 <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto">
                     <p> - Hydration Revival for dry, dehydrated skin</p>
@@ -87,7 +87,7 @@ const Service = () => {
                 </div>
             </div>
             <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto scroll-up">
-                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-pink-500">Complimentary Follow-Up Support</h2>
+                <h2 className="text-[1.25em] md:text-4xl font-bold text-center md:text-justify text-green-500">Complimentary Follow-Up Support</h2>
                 <p className="py-5 text-xl">Your success is our success. After purchasing our recommended products, you'll receive:</p>
                 <div className="py-5 flex flex-col  min-h-[10vh] w-[95%] max-w-[1200px] mx-auto">
                     <p> - Check-in communications to ensure satisfaction</p>
